@@ -1,0 +1,27 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Note": 1,
+    "round": 7
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Note": {},
+    "round": {
+      "1": "{\"id\":\"1\",\"table\":2,\"max\":6,\"dice\":{\"1\":{\"A\":true,\"B\":true,\"C\":true,\"D\":true,\"E\":true,\"F\":true},\"2\":{\"1\":true,\"2\":true,\"3\":true,\"4\":true,\"5\":true,\"6\":true}}}",
+      "2": "{\"id\":\"2\",\"table\":2,\"max\":6,\"dice\":{\"1\":{\"A\":true,\"B\":true,\"C\":true,\"D\":true,\"E\":true,\"F\":true},\"2\":{\"1\":true,\"2\":true,\"3\":true,\"4\":true,\"5\":true,\"6\":true}}}",
+      "3": "{\"id\":3,\"table\":1,\"max\":6,\"dice\":{\"1\":{\"A\":false,\"B\":false,\"C\":false,\"D\":false,\"E\":false,\"F\":false},\"2\":{\"1\":false,\"2\":false,\"3\":false,\"4\":false,\"5\":false,\"6\":false}}}",
+      "4": "{\"id\":\"8a632ae2-82c6-46fb-85e1-28eca1b9969c\",\"table\":1,\"max\":6,\"dice\":{\"1\":{\"A\":false,\"B\":false,\"C\":false,\"D\":false,\"E\":false,\"F\":false},\"2\":{\"1\":false,\"2\":false,\"3\":false,\"4\":false,\"5\":false,\"6\":false}},\"undefined\":4}",
+      "bad7a80b-b45c-4159-b299-d3be3683699d": "{\"id\":\"bad7a80b-b45c-4159-b299-d3be3683699d\",\"table\":2,\"max\":6,\"dice\":{\"1\":{\"A\":true,\"B\":true,\"C\":true,\"D\":true,\"E\":true,\"F\":true,\"undefined\":true},\"2\":{\"1\":true,\"2\":true,\"3\":true,\"4\":true,\"5\":true,\"6\":true,\"undefined\":true}},\"undefined\":5}",
+      "aff17296-441b-4de1-86ec-27eb6d7bfcb7": "{\"id\":\"aff17296-441b-4de1-86ec-27eb6d7bfcb7\",\"table\":1,\"max\":6,\"dice\":{\"1\":{\"A\":false,\"B\":false,\"C\":false,\"D\":false,\"E\":false,\"F\":false},\"2\":{\"1\":false,\"2\":false,\"3\":false,\"4\":false,\"5\":false,\"6\":false}}}"
+    }
+  }
+}

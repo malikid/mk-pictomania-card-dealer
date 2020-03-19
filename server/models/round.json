@@ -1,0 +1,48 @@
+{
+  "name": "round",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "table": {
+      "type": "number",
+      "required": true
+    },
+    "max": {
+      "type": "number",
+      "default": 6
+    },
+    "dice": {
+      "type": "object",
+      "default": {
+        "1": {
+          "A": false,
+          "B": false,
+          "C": false,
+          "D": false,
+          "E": false,
+          "F": false
+        },
+        "2": {
+          "1": false,
+          "2": false,
+          "3": false,
+          "4": false,
+          "5": false,
+          "6": false
+        }
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
