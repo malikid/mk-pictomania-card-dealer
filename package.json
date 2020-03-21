@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint",
+    "postinstall": "bower cache clean && bower install"
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -19,7 +20,8 @@
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^6.2.0",
     "serve-favicon": "^2.0.1",
-    "strong-error-handler": "^3.0.0"
+    "strong-error-handler": "^3.0.0",
+    "bower": "1.8.8"
   },
   "devDependencies": {
     "eslint": "^3.17.1",
