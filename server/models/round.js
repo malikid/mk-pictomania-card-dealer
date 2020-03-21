@@ -4,7 +4,7 @@ const _ = require('lodash');
 module.exports = function(Round) {
   Round.draw = function(roundId, cb) {
     Round.findOne({where: {id: roundId}}, function (err, instance) {
-      if(err) {
+      if(err || !instance) {
         console.error(err);
         return cb(err);
       }
@@ -24,7 +24,7 @@ module.exports = function(Round) {
 
         var availableLength = availableArr.length;
         if(!availableLength) {
-          error = '可樂那來搗亂 =.= 請跟張明禾說要重新這輪的抽籤'
+          error = '跟張明禾說 GG 惹'
           return false;
         }
 
@@ -52,6 +52,14 @@ module.exports = function(Round) {
       http: {path: '/:id/draw', verb: 'get'},
       accepts: {arg: 'id', type: 'string', required: true},
       returns: {arg: '您抽中的籤為', type: 'string'}
+    }
+  );
+  Round.remoteMethod (
+    'draw',
+    {
+      http: { verb: 'get'},
+      accepts: {arg: 'roundId', type: 'string', http: { source: 'query' }, required: true},
+      returns: {arg: 'result', type: 'string'}
     }
   );
 };
