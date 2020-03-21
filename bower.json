@@ -1,0 +1,23 @@
+{
+  "name": "mk-pictomania",
+  "description": "mk-pictomania",
+  "main": "server/server.js",
+  "authors": [
+    "malikid <malikid.chang@gmail.com>"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/malikid/mk-pictomania-card-dealer",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "1.0.25",
+    "angular-resource": "1.7.9",
+    "bootstrap": "4.4.1",
+    "angular": "1.7.9"
+  }
+}

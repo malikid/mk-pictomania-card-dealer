@@ -1,0 +1,35 @@
+<link href="../css/draw.css" rel="stylesheet">
+
+<img
+  class="bg-img"
+  data-gifffer="../loading1.gif"
+/>
+<div
+  class="modal"
+>
+  <div class="result">
+    <span>{{data.lot || data.error}}</span>
+  </div>
+
+  <form
+    name="myForm"
+    class="form-code"
+    ng-submit="submit()"
+    >
+    <input
+      type="text"
+      class="input-code"
+      placeholder="GAME CODE"
+      ng-model="data.code"
+      required
+      autofocus
+    >
+    <input type="submit"
+      class="btn"
+      ng-init="hover=false"
+      ng-mouseover="hover=true"
+      value="go"
+      ng-disabled="loading"
+    >
+  </form>
+</div>
